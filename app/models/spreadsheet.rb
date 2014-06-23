@@ -29,6 +29,8 @@ require 'roo'
   end
 
   def self.random_book
-  	Spreadsheet.find(rand(1..Spreadsheet.last.id))
+  	if Spreadsheet.first
+  		Spreadsheet.find(rand(1..Spreadsheet.last.id))
+  	end
   end
 end
