@@ -6,7 +6,7 @@ class CreateSpreadsheets < ActiveRecord::Migration
     	t.string :description
     	t.integer :edition
       t.integer :copyright_year
-      t.integer :list_price
+      t.float :list_price
     end
   end
 end

@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20140621054900) do
     t.string  "description"
     t.integer "edition"
     t.integer "copyright_year"
-    t.integer "list_price"
+    t.float   "list_price"
   end
 
 end
